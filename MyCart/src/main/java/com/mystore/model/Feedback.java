@@ -19,6 +19,7 @@ public class Feedback {
 	private Integer feedbackId;
 	private Integer productId;
 	private Integer ratings;
+	private String description;
 	
 
 }

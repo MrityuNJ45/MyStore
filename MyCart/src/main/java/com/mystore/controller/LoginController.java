@@ -22,9 +22,9 @@ public class LoginController {
 	private LoginService loginService;
 	
 	@PostMapping("/login")
-	public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) throws LoginException {
+	public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO,@RequestParam String adminOrUser) throws LoginException {
 		
-		String s = loginService.login(loginDTO, "hello");
+		String s = loginService.login(loginDTO, adminOrUser);
 		
 		return new ResponseEntity<String>(s, HttpStatus.ACCEPTED);
 		

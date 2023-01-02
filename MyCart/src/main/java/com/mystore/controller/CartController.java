@@ -41,14 +41,7 @@ public class CartController {
 	}
 	
 	
-	@PutMapping("/removefromcart/{key}/{productId}")
-	public ResponseEntity<Cart> removeProductFromCart(@PathVariable("key") String key, @PathVariable("productId") Integer productId) throws UserException, ProductException {
-		
-		Cart c = cartService.removeProductFromCart(key, productId);
-		
-		return new ResponseEntity<Cart>(c, HttpStatus.ACCEPTED);
-		
-	}
+
 	
 	
 }
