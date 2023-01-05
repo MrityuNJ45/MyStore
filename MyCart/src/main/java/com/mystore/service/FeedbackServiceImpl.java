@@ -1,6 +1,7 @@
 package com.mystore.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.mystore.exception.LoginException;
 import com.mystore.exception.ProductException;
@@ -10,6 +11,7 @@ import com.mystore.repository.CurrentUserSessionDao;
 import com.mystore.repository.FeedbackDao;
 import com.mystore.repository.ProductDao;
 
+@Service
 public class FeedbackServiceImpl implements FeedbackService {
 
 	@Autowired
